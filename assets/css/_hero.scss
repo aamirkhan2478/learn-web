@@ -1,0 +1,46 @@
+.hero-and-header-section {
+  background: url(../images/bg-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: absolute;
+}
+
+.hero-paragraph {
+  color: $orange-color;
+  font-family: $lato-family;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+.hero-heading {
+  color: $orange-color;
+  font-family: $cocogoose-family;
+  width: 15.5rem;
+  text-transform: uppercase;
+}
+
+.hero-description {
+  border: 2px solid $white-color;
+  background-color: $light-color;
+  margin: 0.5rem 0 0.5rem 0;
+  p {
+    font-family: $lato-family;
+    line-height: 1.5rem;
+    margin: 1rem;
+  }
+}
+
+.hero-date {
+  font-family: $cocogoose-family;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.hero-location{
+    font-family: $lato-family;
+    margin: 0.3rem 0 0.3rem 0;
+    font-weight: 500;
+    padding-bottom: 4.5rem;
+}

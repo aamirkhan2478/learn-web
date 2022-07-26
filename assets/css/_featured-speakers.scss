@@ -1,0 +1,56 @@
+.featured-speakers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  .speaker-title {
+    font-family: $cocogoose-family;
+    font-weight: 700;
+    margin-top: 2rem;
+  }
+  .divider {
+    margin: 0.5rem 0 2rem 0;
+    border: 1px solid $orange-color;
+    width: 10%;
+  }
+}
+
+.speaker-card {
+  display: flex;
+  margin: 2rem 0 2rem 0;
+  gap: 1rem;
+  .speaker-image {
+    .bg-img {
+      width: 5rem;
+      height: 5rem;
+      margin-bottom: -4rem;
+      margin-left: -0.4rem;
+    }
+    .avatar {
+      width: 11rem;
+      height: 11rem;
+      position: relative;
+      left: 4px;
+    }
+  }
+
+  .speaker-content {
+    h1 {
+      font-family: $cocogoose-family;
+    }
+    .caption {
+      font-family: $lato-family;
+      font-size: 1.2rem;
+      color: $orange-color;
+      margin: 0.5rem 0 0.5rem 0;
+    }
+    hr {
+      width: 1.4rem;
+      border: 1px solid $light-color;
+      margin: 0 0 0.5rem 0;
+    }
+    p {
+      font-family: $lato-family;
+    }
+  }
+}

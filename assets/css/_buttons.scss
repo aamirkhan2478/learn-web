@@ -1,0 +1,55 @@
+.btn-primary {
+  height: 5.5rem;
+  width: 20.5rem;
+  color: $white-color;
+  background-color: $orange-color;
+  font-family: $lato-family;
+  border: none;
+  &:hover {
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid $light-color;
+    color: $dark-color;
+  }
+
+  &:active {
+    background-color: #fff;
+    border: 1px solid $light-color;
+    color: $dark-color;
+  }
+}
+
+.btn-outline {
+  width: inherit;
+  height: 4rem;
+  background-color: #fff;
+  border: 1px solid $light-color;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  font-family: $lato-family;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  .btn-icon {
+    height: 2rem;
+    width: 2rem;
+    color: $orange-color;
+  }
+  &:hover {
+    cursor: pointer;
+    background-color: $orange-color;
+    color: $white-color;
+    .btn-icon {
+      color: $white-color;
+    }
+  }
+  &:active {
+    background-color: $orange-color;
+    color: $white-color;
+    .btn-icon {
+      color: $white-color;
+    }
+  }
+}
