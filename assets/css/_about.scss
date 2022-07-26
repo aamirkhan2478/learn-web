@@ -1,0 +1,114 @@
+.about-logo {
+  width: 100%;
+  hr {
+    width: 77rem;
+    max-width: calc(100% - -2rem);
+    margin-left: -8px;
+    margin-bottom: 3rem;
+  }
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-family: $cocogoose-family;
+    margin-top: 29rem;
+    text-align: center;
+  }
+  .divider {
+    margin: 0.5rem 0 2rem 0;
+    border: 1px solid $orange-color;
+    width: 10%;
+  }
+  p {
+    font-family: $lato-family;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+}
+
+.logo-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $light-color;
+  height: 10rem;
+  margin-bottom: 5rem;
+  img{
+    width: 23.8rem;
+  }
+}
+
+.past-summit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-family: $cocogoose-family;
+    text-align: center;
+  }
+  .divider {
+    margin: 0.5rem 0 2rem 0;
+    border: 1px solid $orange-color;
+    width: 10%;
+  }
+  p {
+    font-family: $lato-family;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+}
+
+.image-2019 {
+  background-image: url(../images/past-2019.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  box-shadow: inset 0 0 0 1000px rgba(219, 110, 90, 0.8);
+  height: 18rem;
+  width: 26rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-family: $cocogoose-family;
+    font-weight: 700;
+    font-size: 3rem;
+    color: $white-color;
+    margin: 4rem 0 1rem 0;
+  }
+  p {
+    font-family: $lato-family;
+    color: $white-color;
+  }
+}
+
+.image-2015 {
+  background-image: url(../images/past-2015.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  box-shadow: inset 0 0 0 1000px rgba(219, 110, 90, 0.8);
+  height: 18rem;
+  width: 26rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-family: $cocogoose-family;
+    font-weight: 700;
+    font-size: 3rem;
+    color: $white-color;
+    margin: 4rem 0 1rem 0;
+  }
+  p {
+    font-family: $lato-family;
+    color: $white-color;
+  }
+}

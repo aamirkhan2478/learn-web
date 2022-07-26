@@ -1,0 +1,27 @@
+.about-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: 10rem;
+    p{
+        font-family: $lato-family;
+        font-size: 1.4rem;
+    }
+}
+
+.footer{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: 10rem;
+    p{
+        font-family: $lato-family;
+        font-size: 1.4rem;
+    }
+}
+
+.show-footer{
+    display: flex;
+}
