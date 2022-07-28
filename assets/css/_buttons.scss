@@ -5,6 +5,7 @@
   background-color: $orange-color;
   font-family: $lato-family;
   border: none;
+
   &:hover {
     cursor: pointer;
     background-color: #fff;
@@ -32,22 +33,27 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 1rem;
+
   .btn-icon {
     height: 2rem;
     width: 2rem;
     color: $orange-color;
   }
+
   &:hover {
     cursor: pointer;
     background-color: $orange-color;
     color: $white-color;
+
     .btn-icon {
       color: $white-color;
     }
   }
+
   &:active {
     background-color: $orange-color;
     color: $white-color;
+
     .btn-icon {
       color: $white-color;
     }
@@ -58,6 +64,34 @@
   display: none;
 }
 
-.more-btn{
+.more-btn {
   display: none;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .btn-outline {
+    height: 4.5rem;
+    font-size: 2rem;
+
+    .btn-icon {
+      height: 3rem;
+      width: 3rem;
+    }
+  }
+
+  .btn-primary {
+    font-size: 1.5rem;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .btn-primary {
+    display: none;
+  }
+
+  .btn-outline {
+    display: none;
+  }
 }

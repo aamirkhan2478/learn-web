@@ -1,7 +1,8 @@
 .about-logo {
   width: 100%;
+
   hr {
-    width: 77rem;
+    width: 202rem;
     max-width: calc(100% - -2rem);
     margin-left: -8px;
     margin-bottom: 3rem;
@@ -13,16 +14,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   h1 {
     font-family: $cocogoose-family;
     margin-top: 29rem;
     text-align: center;
   }
+
   .divider {
     margin: 0.5rem 0 2rem 0;
     border: 1px solid $orange-color;
     width: 10%;
   }
+
   p {
     font-family: $lato-family;
     text-align: center;
@@ -37,7 +41,8 @@
   border: 1px solid $light-color;
   height: 10rem;
   margin-bottom: 5rem;
-  img{
+
+  img {
     width: 23.8rem;
   }
 }
@@ -47,15 +52,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   h1 {
     font-family: $cocogoose-family;
     text-align: center;
   }
+
   .divider {
     margin: 0.5rem 0 2rem 0;
     border: 1px solid $orange-color;
     width: 10%;
   }
+
   p {
     font-family: $lato-family;
     text-align: center;
@@ -75,6 +83,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   h1 {
     font-family: $cocogoose-family;
     font-weight: 700;
@@ -82,6 +91,7 @@
     color: $white-color;
     margin: 4rem 0 1rem 0;
   }
+
   p {
     font-family: $lato-family;
     color: $white-color;
@@ -100,6 +110,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   h1 {
     font-family: $cocogoose-family;
     font-weight: 700;
@@ -107,8 +118,108 @@
     color: $white-color;
     margin: 4rem 0 1rem 0;
   }
+
   p {
     font-family: $lato-family;
     color: $white-color;
+  }
+}
+
+.data-center {
+  margin: 0 12rem 0 12rem;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .about-container {
+    h1 {
+      margin-top: 39rem;
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  .past-summit {
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .about-container {
+    h1 {
+      margin-top: 65rem;
+    }
+
+    p {
+      width: 51rem;
+      max-width: calc(100% - 2rem);
+    }
+  }
+
+  .logo-border {
+    height: 12rem;
+    width: 28rem;
+  }
+
+  .past-summit {
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
+  }
+
+  .data-center {
+    margin: 0 0 8rem 0;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .about-container {
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 2rem;
+    }
+  }
+
+  .logo-border {
+    height: 15rem;
+    width: 39rem;
+  }
+
+  .past-summit {
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 2rem;
+    }
+  }
+
+  .image-2015 {
+    height: 22rem;
+    width: 33rem;
+  }
+
+  .image-2019 {
+    height: 22rem;
+    width: 33rem;
   }
 }

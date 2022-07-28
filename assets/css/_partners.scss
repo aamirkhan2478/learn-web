@@ -4,14 +4,17 @@
   align-items: center;
   background-color: $dark-color;
   height: 22rem;
+  width: 100%;
+
   h1 {
     font-family: $cocogoose-family;
     color: $white-color;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 2rem;
     text-align: center;
     margin-top: 3rem;
   }
+
   .divider {
     margin: 0.5rem 0 -4rem 0;
     border: 1px solid $orange-color;
@@ -22,6 +25,7 @@
 .partner-logos {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
 }
 
@@ -40,28 +44,37 @@
   width: 17rem;
 }
 
-
 .partner {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    background-color: $dark-color;
-    height: 22rem;
-    h1 {
-      font-family: $cocogoose-family;
-      color: $white-color;
-      font-weight: 700;
-      font-size: 2rem;
-      text-align: center;
-      margin-top: 3rem;
-    }
-    .divider {
-      margin: 0.5rem 0 -4rem 0;
-      border: 1px solid $orange-color;
-      width: 10%;
-    }
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: $dark-color;
+  height: 22rem;
+  width: 100%;
+
+  h1 {
+    font-family: $cocogoose-family;
+    color: $white-color;
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 3rem;
   }
 
-  .show-partner {
+  .divider {
+    margin: 0.5rem 0 -4rem 0;
+    border: 1px solid $orange-color;
+    width: 10%;
+  }
+}
+
+.show-partner {
+  display: flex;
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .partner {
     display: flex;
   }
+}

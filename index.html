@@ -11,18 +11,22 @@
   </head>
   <body>
     <!--======================== Header =========================!-->
-    <section class="hero-and-header-section container-fluid">
-      <header class="header container-fluid container-md">
-        <a href="#" class="logo">LearnWeb</a>
+    <section class="hero-and-header-section">
+      <header class="header">
+        <a href="#" class="logo"
+          ><img src="./assets/images/logo.png" alt="logo"
+        /></a>
         <nav class="navbar">
           <ul class="nav-links">
+            <li class="nav-item active-page">
+              <a href="./index.html">Home</a>
+            </li>
             <li class="nav-item"><a href="./pages/about.html">About</a></li>
-            <li class="nav-item"><a href="#program">Program</a></li>
             <li class="nav-item"><a href="#speaker">Speakers</a></li>
             <li class="nav-item"><a href="#partner">Partner</a></li>
           </ul>
         </nav>
-        <div class="nav-mobile-btn">
+        <div class="nav-mobile-btn container-fluid">
           <ion-icon name="menu" class="nav-icon"></ion-icon>
           <ion-icon name="close" class="nav-icon"></ion-icon>
         </div>
@@ -44,191 +48,69 @@
     </section>
 
     <!--======================== Main Program =========================!-->
-    <section class="main-program container-fluid container-md" id="program">
+    <section class="main-program" id="program">
       <h1 class="program-title">Main Program</h1>
       <hr class="divider" />
-      <div class="card">
-        <ion-icon name="microphone" class="program-icon"></ion-icon>
-        <h3>Lecture</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, ipsa?
-        </p>
+      <div class="flexbox">
+        <div class="card">
+          <ion-icon name="microphone" class="program-icon"></ion-icon>
+          <h3>Lecture</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, ipsa?
+          </p>
+        </div>
+        <div class="card">
+          <ion-icon name="image" class="program-icon"></ion-icon>
+          <h3>Dev Exhibition</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, ipsa?
+          </p>
+        </div>
+        <div class="card">
+          <ion-icon name="chatboxes" class="program-icon"></ion-icon>
+          <h3>forum</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, ipsa?
+          </p>
+        </div>
+        <div class="card">
+          <ion-icon name="desktop" class="program-icon"></ion-icon>
+          <h3>Workshop</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, ipsa?
+          </p>
+        </div>
+        <div class="card">
+          <ion-icon name="snow" class="program-icon"></ion-icon>
+          <h3>Dev Ignite</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, ipsa?
+          </p>
+        </div>
       </div>
-      <div class="card">
-        <ion-icon name="image" class="program-icon"></ion-icon>
-        <h3>Dev Exhibition</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, ipsa?
-        </p>
-      </div>
-      <div class="card">
-        <ion-icon name="chatboxes" class="program-icon"></ion-icon>
-        <h3>forum</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, ipsa?
-        </p>
-      </div>
-      <div class="card">
-        <ion-icon name="desktop" class="program-icon"></ion-icon>
-        <h3>Workshop</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, ipsa?
-        </p>
-      </div>
-      <div class="card">
-        <ion-icon name="snow" class="program-icon"></ion-icon>
-        <h3>Dev Ignite</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, ipsa?
-        </p>
-      </div>
-      <button class="btn-primary">Join Dev Global Summit 2022</button>
+      <button type="button" class="btn-primary">
+        Join Dev Global Summit 2022
+      </button>
+      <a href="#" class="whole-program">See the whole program</a>
     </section>
 
     <!--======================== Featured Speakers =========================!-->
     <section class="featured-speakers container-fluid" id="speaker">
       <h1 class="speaker-title">Featured Speakers</h1>
       <hr class="divider" />
-      <div class="speaker-card">
-        <div class="speaker-image">
-          <img
-            src="./assets/images/speaker-bg-image.jpg"
-            alt="speaker image"
-            class="bg-img"
-          />
-          <img
-            src="https://randomuser.me/api/portraits/men/75.jpg"
-            alt="speaker image"
-            class="avatar"
-          />
-        </div>
-        <div class="speaker-content">
-          <h1>David</h1>
-          <p class="caption">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          </p>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque
-            tenetur quaerat repellat sint doloribus numquam hic! Fugiat illo at
-            eligendi a nihil ullam eos voluptatem nesciunt?
-          </p>
-        </div>
-      </div>
-      <div class="speaker-card">
-        <div class="speaker-image">
-          <img
-            src="./assets/images/speaker-bg-image.jpg"
-            alt="speaker image"
-            class="bg-img"
-          />
-          <img
-            src="https://randomuser.me/api/portraits/women/50.jpg"
-            alt="speaker image"
-            class="avatar"
-          />
-        </div>
-        <div class="speaker-content">
-          <h1>Richal</h1>
-          <p class="caption">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          </p>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque
-            tenetur quaerat repellat sint doloribus numquam hic! Fugiat illo at
-            eligendi a nihil ullam eos voluptatem nesciunt?
-          </p>
-        </div>
-      </div>
-      <div class="speaker-card hide-card">
-        <div class="speaker-image">
-          <img
-            src="./assets/images/speaker-bg-image.jpg"
-            alt="speaker image"
-            class="bg-img"
-          />
-          <img
-            src="https://randomuser.me/api/portraits/men/40.jpg"
-            alt="speaker image"
-            class="avatar"
-          />
-        </div>
-        <div class="speaker-content">
-          <h1>Robert</h1>
-          <p class="caption">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          </p>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque
-            tenetur quaerat repellat sint doloribus numquam hic! Fugiat illo at
-            eligendi a nihil ullam eos voluptatem nesciunt?
-          </p>
-        </div>
-      </div>
-      <div class="speaker-card hide-card">
-        <div class="speaker-image">
-          <img
-            src="./assets/images/speaker-bg-image.jpg"
-            alt="speaker image"
-            class="bg-img"
-          />
-          <img
-            src="https://randomuser.me/api/portraits/women/60.jpg"
-            alt="speaker image"
-            class="avatar"
-          />
-        </div>
-        <div class="speaker-content">
-          <h1>Alice</h1>
-          <p class="caption">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          </p>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque
-            tenetur quaerat repellat sint doloribus numquam hic! Fugiat illo at
-            eligendi a nihil ullam eos voluptatem nesciunt?
-          </p>
-        </div>
-      </div>
-      <div class="speaker-card hide-card">
-        <div class="speaker-image">
-          <img
-            src="./assets/images/speaker-bg-image.jpg"
-            alt="speaker image"
-            class="bg-img"
-          />
-          <img
-            src="https://randomuser.me/api/portraits/men/70.jpg"
-            alt="speaker image"
-            class="avatar"
-          />
-        </div>
-        <div class="speaker-content">
-          <h1>John Doe</h1>
-          <p class="caption">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          </p>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque
-            tenetur quaerat repellat sint doloribus numquam hic! Fugiat illo at
-            eligendi a nihil ullam eos voluptatem nesciunt?
-          </p>
-        </div>
-      </div>
-      <button class="btn-outline" id="btn-more">More <ion-icon name="arrow-dropdown" class="btn-icon"></ion-icon><button>
+      <div class="row" id="speakers"></div>
+      <button type="button" class="btn-outline" id="btn-more">
+        More <ion-icon name="arrow-dropdown" class="btn-icon"></ion-icon>
+      </button>
     </section>
 
-     <!--======================== Partner =========================!-->
-     <section class="partner container">
+    <!--======================== Partner =========================!-->
+    <section class="partner" id="partner">
       <h1>Partner</h1>
       <hr class="divider" />
       <div class="partner-logos container">
         <svg
-        class="google-icon"
+          class="google-icon"
           viewBox="0 0 272 92"
           width="50"
           xmlns="http://www.w3.org/2000/svg"
@@ -309,11 +191,13 @@
 
     <!--======================== footer =========================!-->
     <footer class="footer container">
-      <a href="../index.html">LearnWeb</a>
+      <img src="./assets/images/logo.png" alt="logo" />
       <p>&copy; 2022 Web Development Courses, Some Right Reserved.</p>
     </footer>
     <div class="container">
-      <button class="btn-outline less-btn" id="btn-less">Less <ion-icon name="arrow-dropup" class="btn-icon""></ion-icon></ion-icon><button></button>
+      <button type="button" class="btn-outline less-btn" id="btn-less">
+        Less <ion-icon name="arrow-dropup" class="btn-icon"></ion-icon>
+      </button>
     </div>
   </body>
 </html>

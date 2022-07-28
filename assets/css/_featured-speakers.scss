@@ -3,11 +3,13 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+
   .speaker-title {
     font-family: $cocogoose-family;
     font-weight: 700;
     margin-top: 2rem;
   }
+
   .divider {
     margin: 0.5rem 0 2rem 0;
     border: 1px solid $orange-color;
@@ -19,6 +21,7 @@
   display: flex;
   margin: 2rem 0 2rem 0;
   gap: 1rem;
+
   .speaker-image {
     .bg-img {
       width: 5rem;
@@ -26,6 +29,7 @@
       margin-bottom: -4rem;
       margin-left: -0.4rem;
     }
+
     .avatar {
       width: 11rem;
       height: 11rem;
@@ -38,23 +42,80 @@
     h1 {
       font-family: $cocogoose-family;
     }
+
     .caption {
       font-family: $lato-family;
       font-size: 1.2rem;
       color: $orange-color;
       margin: 0.5rem 0 0.5rem 0;
     }
+
     hr {
       width: 1.4rem;
       border: 1px solid $light-color;
       margin: 0 0 0.5rem 0;
     }
+
     p {
       font-family: $lato-family;
     }
   }
 }
 
-.hide-card{
+.hide-card {
   display: none;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .featured-speakers {
+    .speaker-title {
+      font-size: 2rem;
+    }
+  }
+
+  .speaker-card {
+    .speaker-content {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .caption {
+        font-size: 1.5rem;
+      }
+
+      hr {
+        width: 1.8rem;
+        border: 2px solid $light-color;
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .hide-card {
+    display: flex;
+  }
+
+  .speaker-card {
+    .speaker-image {
+      .avatar {
+        transition: width 1s, height 2s;
+        width: 11rem;
+        height: 11rem;
+        position: relative;
+        left: 4px;
+
+        &:hover {
+          width: 300px;
+          height: 300px;
+        }
+      }
+    }
+  }
 }

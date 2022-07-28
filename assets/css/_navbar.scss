@@ -39,6 +39,7 @@
   list-style: none;
   border-bottom: 1px solid $dark-color;
   margin-top: 3rem;
+
   a {
     font-family: $lato-family;
     font-weight: 500;
@@ -53,28 +54,113 @@
   cursor: pointer;
   background: transparent;
   margin-right: 2.4rem;
+
   .nav-icon {
     height: 2.6rem;
     width: 2.6rem;
     position: relative;
     z-index: 9999999;
   }
+
   .nav-icon[name="close"] {
     display: none;
   }
 }
 
-.active .navbar {
-  transform: translateX(0);
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
+.active {
+  .navbar {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .nav-mobile-btn {
+    .nav-icon[name="close"] {
+      display: block;
+    }
+
+    .nav-icon[name="menu"] {
+      display: none;
+    }
+  }
 }
 
-.active .nav-mobile-btn .nav-icon[name="close"] {
-  display: block;
+.active-page a {
+  color: $orange-color;
 }
 
-.active .nav-mobile-btn .nav-icon[name="menu"] {
-  display: none;
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .header {
+    background-color: $white-color;
+    box-shadow: 2;
+  }
+
+  .navbar {
+    display: block;
+    height: 6rem;
+    position: relative;
+    transform: none;
+    opacity: inherit;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 5rem;
+    gap: 2rem;
+  }
+
+  .nav-item {
+    border-bottom: 0;
+    margin-top: -5rem;
+
+    a {
+      font-size: 1.5rem;
+
+      &:hover {
+        color: $orange-color;
+      }
+    }
+  }
+
+  .logo {
+    display: block;
+    margin-left: 5rem;
+
+    img {
+      width: 18rem;
+    }
+  }
+
+  .nav-mobile-btn {
+    display: none;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .logo {
+    margin-left: 8rem;
+  }
+
+  .nav-links {
+    margin-right: 8rem;
+    gap: 4rem;
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .logo {
+    margin-left: 10rem;
+  }
+
+  .nav-links {
+    margin-right: 10rem;
+    gap: 7rem;
+  }
 }
