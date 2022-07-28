@@ -11,14 +11,26 @@
   </head>
   <body>
     <!--======================== Header =========================!-->
-    <section class="about-hero-and-header-section container-fluid">
-      <header class="header container-fluid container-md">
-        <a href="#" class="logo">LearnWeb</a>
+    <header class="top-header">
+      <ul>
+        <li><ion-icon name="logo-facebook" class="top-icon"></ion-icon></li>
+        <li><ion-icon name="logo-twitter" class="top-icon"></ion-icon></li>
+        <li><a href="#">English</a></li>
+        <li><a href="#">My Page</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </header>
+    <section class="about-hero-and-header-section">
+      <header class="header">
+        <a href="../index.html" class="logo">
+          <img src="../assets/images/logo.png" alt="logo" />
+        </a>
         <nav class="navbar">
           <ul class="nav-links">
             <li class="nav-item"><a href="../index.html">Home</a></li>
-            <li class="nav-item"><a href="#program">Program</a></li>
-            <li class="nav-item"><a href="#speaker">Speakers</a></li>
+            <li class="nav-item active-page">
+              <a href="./about.html">About</a>
+            </li>
             <li class="nav-item"><a href="#partner">Partner</a></li>
           </ul>
         </nav>
@@ -27,37 +39,38 @@
           <ion-icon name="close" class="nav-icon"></ion-icon>
         </div>
       </header>
-
-      <p class="about-hero-paragraph">"Hello, Sharing World"</p>
-      <h1 class="about-hero-heading">Web Development Global Summit 2022</h1>
-      <div class="about-hero-description">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ad
-          laudantium voluptatum, modi natus perspiciatis. Lorem ipsum dolor sit
-          amet consectetur adipisicing elit.
-        </p>
-      </div>
-      <div class="container">
+      <div class="about-flexbox container">
+        <p class="about-hero-paragraph">"Hello, Sharing World"</p>
+        <h1 class="about-hero-heading">Web Development Global Summit 2022</h1>
+        <div class="about-hero-description">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ad
+            laudantium voluptatum, modi natus perspiciatis. Lorem ipsum dolor
+            sit amet consectetur adipisicing elit.
+          </p>
+        </div>
         <p class="about-contact">
           Please contact us per email for any further questions about Dev Global
           Summit 2022!
         </p>
-        <a href="#" class="about-email">devsummit2022@gmail.com</a>
+        <div class="email-center">
+          <a href="#" class="about-email">devsummit2022@gmail.com</a>
+        </div>
       </div>
     </section>
 
     <!--======================== About Logo =========================!-->
-    <section class="about-logo container-fluid">
-      <div class="container about-container">
+    <section class="about-logo">
+      <div class="about-container">
         <h1>Web Development Global Summit 2020 Logo</h1>
         <hr class="divider" />
         <p>
           Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur,
           adipisicing elit. Excepturi aliquid aperiam debitis accusantium.
         </p>
-      </div>
-      <div class="logo-border">
-        <img src="../assets/images/logo.png" alt="Logo" />
+        <div class="logo-border">
+          <img src="../assets/images/logo.png" alt="Logo" />
+        </div>
       </div>
       <hr />
       <div class="past-summit container">
@@ -67,19 +80,25 @@
           Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur,
           adipisicing elit. Excepturi aliquid aperiam debitis accusantium.
         </p>
-        <div class="image-2019">
-          <h1>2019</h1>
-          <p>Dev Global Summit 2019 in Buenos Aires</p>
-        </div>
-        <div class="image-2015">
-          <h1>2015</h1>
-          <p>Dev Global Summit 2015 in Warsaw</p>
+        <div class="row data-center">
+          <div class="col-12 col-md-6">
+            <div class="image-2019">
+              <h1>2019</h1>
+              <p>Dev Global Summit 2019 in Buenos Aires</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="image-2015">
+              <h1>2015</h1>
+              <p>Dev Global Summit 2015 in Warsaw</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!--======================== Partner =========================!-->
-    <section class="about-partner container">
+    <section class="about-partner" id="partner">
       <h1>Partner</h1>
       <hr class="divider" />
       <div class="partner-logos container">
@@ -164,8 +183,13 @@
     </section>
 
     <!--======================== Footer =========================!-->
-    <footer class="about-footer container">
-      <img src="../assets/images/logo.png" alt="logo">
+    <footer class="about-footer">
+      <img
+        src="../assets/images/about-logo.png"
+        alt="logo"
+        class="desktop-logo"
+      />
+      <img src="../assets/images/logo.png" alt="logo" class="mobile-logo" />
       <p>&copy; 2022 Web Development Courses, Some Right Reserved.</p>
     </footer>
   </body>

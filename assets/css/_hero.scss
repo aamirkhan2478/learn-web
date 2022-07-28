@@ -4,7 +4,7 @@
   background-size: cover;
   width: 100%;
   position: absolute;
-  box-shadow: inset 0 0 0 1000px rgba(210 ,210 ,209, 0.8);
+  box-shadow: inset 0 0 0 1000px rgba(210, 210, 209, 0.8);
 }
 
 .hero-paragraph {
@@ -13,6 +13,7 @@
   font-size: 1rem;
   font-weight: 500;
   line-height: 2rem;
+  margin: 0 0 0 1rem;
 }
 
 .hero-heading {
@@ -20,12 +21,16 @@
   font-family: $cocogoose-family;
   width: 15.5rem;
   text-transform: uppercase;
+  margin: 0 0 0 1rem;
 }
 
 .hero-description {
   border: 2px solid $white-color;
   background-color: $light-color;
-  margin: 0.5rem 0 0.5rem 0;
+  margin: 0.3rem 0 0.3rem 1rem;
+  width: 55rem;
+  max-width: calc(100% - 2rem);
+
   p {
     font-family: $lato-family;
     line-height: 1.5rem;
@@ -37,13 +42,14 @@
   font-family: $cocogoose-family;
   font-weight: 800;
   text-transform: uppercase;
+  margin: 0 0 0 1rem;
 }
 
-.hero-location{
-    font-family: $lato-family;
-    margin: 0.3rem 0 0.3rem 0;
-    font-weight: 500;
-    padding-bottom: 4.5rem;
+.hero-location {
+  font-family: $lato-family;
+  font-weight: 500;
+  padding-bottom: 4.5rem;
+  margin: 0 0 0 1rem;
 }
 
 .about-hero-and-header-section {
@@ -52,11 +58,11 @@
   background-size: cover;
   width: 100%;
   position: absolute;
-  box-shadow: inset 0 0 0 1000px rgba(210 ,210 ,209, 0.8);
+  box-shadow: inset 0 0 0 1000px rgba(210, 210, 209, 0.8);
   height: 27rem;
 }
 
-.about-hero-paragraph{
+.about-hero-paragraph {
   color: $orange-color;
   font-family: $lato-family;
   font-size: 1rem;
@@ -76,6 +82,7 @@
   border: 2px solid $light-color;
   background-color: $white-color;
   margin: 0.5rem 0 0.5rem 0;
+
   p {
     font-family: $lato-family;
     line-height: 1.5rem;
@@ -84,16 +91,182 @@
   }
 }
 
-.about-contact{
+.about-contact {
   font-family: $lato-family;
   text-align: center;
   margin-bottom: 0.5rem;
 }
 
-.about-email{
+.about-email {
   font-family: $lato-family;
   text-align: center;
   color: $dark-color;
   width: 5rem;
   margin: 0 6rem 0 6rem;
+}
+
+.about-flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.email-center {
+  text-align: center;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .hero-paragraph {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .hero-heading {
+    width: 32.5rem;
+    font-size: 3rem;
+  }
+
+  .hero-description {
+    width: 70rem;
+    max-width: calc(100% - 2rem);
+
+    p {
+      line-height: 1.8rem;
+      font-size: 1.5rem;
+      margin: 1.5rem;
+    }
+  }
+
+  .hero-date {
+    font-size: 2rem;
+  }
+
+  .hero-location {
+    font-size: 1.5rem;
+  }
+
+  .about-hero-and-header-section {
+    height: 36rem;
+  }
+
+  .about-hero-paragraph {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .about-hero-heading {
+    font-size: 3rem;
+  }
+
+  .about-hero-description {
+    margin: 1rem 0 1rem 0;
+    width: 70rem;
+    max-width: calc(100% - 2rem);
+
+    p {
+      line-height: 1.8rem;
+      font-size: 1.5rem;
+      margin: 1.5rem;
+    }
+  }
+
+  .about-contact {
+    font-size: 1.5rem;
+  }
+
+  .about-email {
+    font-size: 1.3rem;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .hero-paragraph {
+    font-size: 3.5rem;
+    line-height: 4rem;
+    margin: 5rem 0 0 6rem;
+  }
+
+  .hero-heading {
+    width: 42.5rem;
+    margin: 1rem 0 0 7rem;
+    font-size: 4rem;
+  }
+
+  .hero-description {
+    margin: 0.5rem 1rem 0.5rem 7rem;
+    width: 34rem;
+
+    p {
+      line-height: 2rem;
+      font-size: 1.8rem;
+    }
+  }
+
+  .hero-date {
+    font-size: 3rem;
+    margin: 0 7rem 0 7rem;
+  }
+
+  .hero-location {
+    font-size: 2rem;
+    margin: 0 7rem 0 7rem;
+  }
+
+  .about-hero-and-header-section {
+    height: 60rem;
+  }
+
+  .about-hero-paragraph {
+    display: none;
+  }
+
+  .about-hero-heading {
+    font-size: 4rem;
+    width: 45rem;
+    font-weight: 700;
+  }
+
+  .about-hero-description {
+    margin: 1rem 0 1rem 3rem;
+    width: 70rem;
+    max-width: calc(100% - 2rem);
+    height: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-flexbox {
+    height: 100%;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  html {
+    font-size: 70%;
+  }
+
+  .about-hero-paragraph {
+    display: none;
+  }
+
+  .about-hero-description {
+    margin: 1rem 12rem 1rem 12rem;
+
+    p {
+      font-size: 2rem;
+    }
+  }
+
+  .about-contact {
+    font-size: 2rem;
+  }
+
+  .about-email {
+    font-size: 1.8rem;
+  }
 }

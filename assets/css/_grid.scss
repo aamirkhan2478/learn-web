@@ -1,12 +1,14 @@
 .row {
   --gutter-x: 1.5rem;
   --gutter-y: 0;
+
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--gutter-y));
   margin-right: calc(-0.5 * var(--gutter-x));
   margin-left: calc(-0.5 * var(--gutter-x));
 }
+
 .row > * {
   flex-shrink: 0;
   width: 100%;
@@ -18,41 +20,6 @@
 
 .col {
   flex: 1 0 0%;
-}
-
-.row-cols-auto > * {
-  flex: 0 0 auto;
-  width: auto;
-}
-
-.row-cols-1 > * {
-  flex: 0 0 auto;
-  width: 100%;
-}
-
-.row-cols-2 > * {
-  flex: 0 0 auto;
-  width: 50%;
-}
-
-.row-cols-3 > * {
-  flex: 0 0 auto;
-  width: 33.3333333333%;
-}
-
-.row-cols-4 > * {
-  flex: 0 0 auto;
-  width: 25%;
-}
-
-.row-cols-5 > * {
-  flex: 0 0 auto;
-  width: 20%;
-}
-
-.row-cols-6 > * {
-  flex: 0 0 auto;
-  width: 16.6666666667%;
 }
 
 .col-auto {
@@ -225,6 +192,7 @@
     width: 100%;
   }
 }
+
 @media (min-width: 768px) {
   .col-md {
     flex: 1 0 0%;
@@ -436,6 +404,7 @@
     width: 100%;
   }
 }
+
 @media (min-width: 1200px) {
   .col-xl {
     flex: 1 0 0%;
@@ -541,6 +510,7 @@
     width: 100%;
   }
 }
+
 @media (min-width: 1400px) {
   .col-xxl {
     flex: 1 0 0%;
