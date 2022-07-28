@@ -11,6 +11,15 @@
   </head>
   <body>
     <!--======================== Header =========================!-->
+    <header class="top-header">
+      <ul>
+        <li><ion-icon name="logo-facebook" class="top-icon"></ion-icon></li>
+        <li><ion-icon name="logo-twitter" class="top-icon"></ion-icon></li>
+        <li><a href="#">English</a></li>
+        <li><a href="#">My Page</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </header>
     <section class="about-hero-and-header-section">
       <header class="header">
         <a href="../index.html" class="logo">
@@ -19,7 +28,9 @@
         <nav class="navbar">
           <ul class="nav-links">
             <li class="nav-item"><a href="../index.html">Home</a></li>
-            <li class="nav-item active-page"><a href="./about.html">About</a></li>
+            <li class="nav-item active-page">
+              <a href="./about.html">About</a>
+            </li>
             <li class="nav-item"><a href="#partner">Partner</a></li>
           </ul>
         </nav>
@@ -172,8 +183,13 @@
     </section>
 
     <!--======================== Footer =========================!-->
-    <footer class="about-footer container">
-      <img src="../assets/images/logo.png" alt="logo" />
+    <footer class="about-footer">
+      <img
+        src="../assets/images/about-logo.png"
+        alt="logo"
+        class="desktop-logo"
+      />
+      <img src="../assets/images/logo.png" alt="logo" class="mobile-logo" />
       <p>&copy; 2022 Web Development Courses, Some Right Reserved.</p>
     </footer>
   </body>

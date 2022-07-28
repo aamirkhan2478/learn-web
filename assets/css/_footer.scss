@@ -5,7 +5,7 @@
   gap: 1rem;
   height: 10rem;
 
-  img {
+   img {
     width: 14.4rem;
     max-width: calc(100% - 20rem);
   }
@@ -38,6 +38,13 @@
   display: flex;
 }
 
+.desktop-logo {
+  display: none;
+}
+
+.mobile-logo {
+  display: block;
+}
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
   .footer {
@@ -55,7 +62,20 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+  .about-footer {
+    background-color: #2e2e2e;
+    color: $white-color;
+  }
+
   .footer {
     display: flex;
+  }
+
+  .mobile-logo {
+    display: none;
+  }
+
+  .desktop-logo {
+    display: block;
   }
 }

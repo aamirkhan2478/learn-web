@@ -90,6 +90,10 @@
   color: $orange-color;
 }
 
+.top-header {
+  display: none;
+}
+
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .header {
@@ -138,6 +142,38 @@
 
   .nav-mobile-btn {
     display: none;
+  }
+
+  .top-header {
+    background-color: #3e3e3e;
+    height: 3rem;
+    display: flex;
+    justify-content: end;
+    color: $white-color;
+
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-right: 5rem;
+
+      li {
+        list-style: none;
+        font-family: $lato-family;
+
+        a {
+          text-decoration: none;
+          color: $white-color;
+        }
+
+        .top-icon {
+          height: 1.5rem;
+          width: 1.5rem;
+          cursor: pointer;
+          margin-top: 0.4rem;
+        }
+      }
+    }
   }
 }
 

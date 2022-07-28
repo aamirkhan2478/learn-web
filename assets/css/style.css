@@ -881,6 +881,10 @@ body {
   color: #ec5242;
 }
 
+.top-header {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .header {
     background-color: #f4f4f4;
@@ -928,6 +932,38 @@ body {
 
   .nav-mobile-btn {
     display: none;
+  }
+
+  .top-header {
+    background-color: #3e3e3e;
+    height: 3rem;
+    display: flex;
+    justify-content: end;
+    color: #f4f4f4;
+  }
+
+  .top-header ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 5rem;
+  }
+
+  .top-header ul li {
+    list-style: none;
+    font-family: "Lato", sans-serif;
+  }
+
+  .top-header ul li a {
+    text-decoration: none;
+    color: #f4f4f4;
+  }
+
+  .top-header ul li .top-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    cursor: pointer;
+    margin-top: 0.4rem;
   }
 }
 
@@ -1330,14 +1366,12 @@ body {
 }
 
 .main-program {
-  background-image: url(../images/program-image.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url(../images/program-image.png);
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 104.5rem;
+  height: 91.5rem;
 }
 
 .main-program .program-title {
@@ -1365,18 +1399,18 @@ body {
 
 .card {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: #f4f4f4;
-  background-color: #272a31;
+  background-color: #3d4047;
   margin-bottom: 0.7rem;
   padding: 0.7rem;
   opacity: 0.8;
-  width: 20rem;
-  height: 10rem;
+  width: 36rem;
+  height: 8rem;
   gap: 1rem;
   max-width: calc(100% - 2rem);
+  box-shadow: 1px;
 }
 
 .card .program-icon {
@@ -1389,14 +1423,12 @@ body {
   font-family: "Cocogoose", sans-serif;
   font-size: 1.5rem;
   width: 11rem;
-  text-align: center;
 }
 
 .card p {
   font-family: "Lato", sans-serif;
   font-size: 1rem;
   width: 14rem;
-  text-align: center;
 }
 
 .whole-program {
@@ -1583,6 +1615,10 @@ body {
   .partner {
     display: flex;
   }
+
+  .about-partner {
+    display: none;
+  }
 }
 
 .about-footer {
@@ -1625,6 +1661,14 @@ body {
   display: flex;
 }
 
+.desktop-logo {
+  display: none;
+}
+
+.mobile-logo {
+  display: block;
+}
+
 @media (min-width: 576px) {
   .footer p {
     font-size: 1.7rem;
@@ -1636,8 +1680,21 @@ body {
 }
 
 @media (min-width: 768px) {
+  .about-footer {
+    background-color: #2e2e2e;
+    color: #f4f4f4;
+  }
+
   .footer {
     display: flex;
+  }
+
+  .mobile-logo {
+    display: none;
+  }
+
+  .desktop-logo {
+    display: block;
   }
 }
 

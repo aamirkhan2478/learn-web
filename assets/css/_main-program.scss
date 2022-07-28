@@ -1,12 +1,10 @@
 .main-program {
-  background-image: url(../images/program-image.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url(../images/program-image.png);
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 104.5rem;
+  height: 91.5rem;
 
   .program-title {
     font-family: $cocogoose-family;
@@ -34,18 +32,18 @@
 
 .card {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: #f4f4f4;
-  background-color: #272a31;
+  background-color: #3d4047;
   margin-bottom: 0.7rem;
   padding: 0.7rem;
   opacity: 0.8;
-  width: 20rem;
-  height: 10rem;
+  width: 36rem;
+  height: 8rem;
   gap: 1rem;
   max-width: calc(100% - 2rem);
+  box-shadow: 1px;
 
   .program-icon {
     width: 2.5rem;
@@ -57,14 +55,12 @@
     font-family: $cocogoose-family;
     font-size: 1.5rem;
     width: 11rem;
-    text-align: center;
   }
 
   p {
     font-family: $lato-family;
     font-size: 1rem;
     width: 14rem;
-    text-align: center;
   }
 }
 
